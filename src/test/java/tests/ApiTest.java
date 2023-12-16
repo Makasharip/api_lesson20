@@ -55,7 +55,7 @@ public class ApiTest extends TestBase {
                         .extract().as(RegisterResponseModel.class));
 
         step("Verify Response", () ->
-                       assertEquals("Missing password", response.getError()));
+                assertEquals("Missing password", response.getError()));
     }
 
     @Test
